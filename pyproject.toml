@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ansible-runner"
+version = "0.1.0"
+description = ""
+authors = ["Ayres Fonseca <ayres.fonseca@yahoo.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ansible-core = "<2.16"
+jmespath = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+yamllint = "^1.33.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
