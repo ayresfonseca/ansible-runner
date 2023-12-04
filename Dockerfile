@@ -10,7 +10,7 @@ COPY pyproject.toml ./
 COPY poetry.lock ./
 COPY collections ./collections/
 
-RUN  apt-get update && apt-get upgrade -y && apt-get install -y build-essential && \
+RUN  apt-get update && apt-get upgrade -y && apt-get install -y build-essential mariadb-client rsync && \
         rm -rf /var/lib/apt/lists/*
 RUN  pip install --no-cache-dir "poetry==1.7.1" && \
         poetry config virtualenvs.create false && \
