@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansible-runner"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Ayres Fonseca <ayres.fonseca@yahoo.ca>"]
 readme = "README.md"
